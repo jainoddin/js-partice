@@ -16,8 +16,59 @@ for (var i = 0; i < a.length; i++) {
 
 
 
-for (var i = 'a'; i < 'z'; i++) {
-   if(a[i]==='a'&&a[i]==='z'){
-      console.log('aaa',a[i])
+for (let j = 'a'.charCodeAt(0); j <= 'z'.charCodeAt(0); j++) {
+   console.log('aaa', String.fromCharCode(j));
+}
+
+for (var j = 97; j <= 122; j++) {  // ASCII values of 'a' is 97 and 'z' is 122
+   console.log('aaa', String.fromCharCode(j));
+}
+
+var x=1;
+var y=2;
+
+ x=x+y;
+y=x-y;
+x=x-y
+console.log('ccc',x)
+console.log('ccc',y)
+
+
+
+for (var i = 2; i <= 10; i++) {
+   var count = 0; 
+   for (var j = 1; j <= i; j++) {
+       if (i % j == 0) { 
+           count++;
+       }
+   }
+   if (count == 2) { 
+       console.log("Prime number:", i);
+   }
+}
+
+var name="TAPAN"
+
+for (var i = 'A'.charCodeAt(0); i <= 'Z'.charCodeAt(0); i++) {
+   var evenletter, oddletter;
+
+   if (i % 2 == 0) {
+       evenletter = i; // Assign the current character to even
+   } else {
+       oddletter = i;  // Assign the current character to odd
+   }
+
+   // Make sure both evenletter and oddletter are defined before swapping
+   if (evenletter && oddletter) {
+       // Swap evenletter and oddletter using arithmetic operations
+       evenletter = evenletter + oddletter;
+       oddletter = evenletter - oddletter;
+       evenletter = evenletter - oddletter;
+
+       // Output the swapped letters
+       console.log(String.fromCharCode(evenletter), String.fromCharCode(oddletter));
+       
+       // Reset evenletter and oddletter for the next iteration
+       evenletter = oddletter = undefined;
    }
 }
