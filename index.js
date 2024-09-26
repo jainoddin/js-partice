@@ -60,8 +60,12 @@ for (var i = 'A'.charCodeAt(0); i <= 'Z'.charCodeAt(0); i++) {
 
    // Make sure both evenletter and oddletter are defined before swapping
    if (evenletter && oddletter) {
-       // Swap evenletter and oddletter using arithmetic operations
-       evenletter = evenletter + oddletter;
+
+
+
+
+
+      evenletter = evenletter + oddletter;
        oddletter = evenletter - oddletter;
        evenletter = evenletter - oddletter;
 
