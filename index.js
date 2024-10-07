@@ -78,6 +78,15 @@ for (var i = 'A'.charCodeAt(0); i <= 'Z'.charCodeAt(0); i++) {
 
 
 
+
+
+
+       
+
+
+
+
+
        
        
        console.log(String.fromCharCode(evenletter), String.fromCharCode(oddletter));
